@@ -153,6 +153,7 @@ main {
 .projects .project-lists {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     text-align: left;
     width: 98%;
 }
