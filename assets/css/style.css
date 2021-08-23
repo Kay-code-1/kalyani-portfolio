@@ -1,0 +1,364 @@
+:root {
+    --light: #b2b7ff;
+    --dark: #2f365f;
+    --body-main: #eeeeee;
+    --section: #dfcba7;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--body-main);
+    font-size: 18px; 
+}
+
+header {
+    background-color: var(--dark);
+    width: 100%;    
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    border: 10px 0;
+}
+
+main {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+}
+
+.left-nav {
+    /* height: 80%; */
+    width: 20%;
+    background-color: lightgray;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.left-nav a, a:hover, a:focus, a:active {
+        text-decoration: none;
+}
+
+/*Details*/
+
+.right-nav {
+    background-color: var(--light);
+    width: 80%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+/*About*/
+
+.right-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-content .heading {
+    width: 100%;
+    padding: 15px;
+}
+
+.right-content .title {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.right-content .desc {
+    font-size: 18px;
+}
+
+.right-content .avatar {
+    width: 25%;
+    float: right;
+}
+
+/*Technical skills*/
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.tech-stack .title {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.tech-stack .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.tech-stack .skills-set {
+    padding: 10px;
+    width: 98%;
+    display: block;
+    background-color: var(--dark);
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.tech-stack h3 {
+    text-align: center;
+}
+
+.tech-stack .skills .skills-set .skills-set-details {
+    display: none;
+}
+
+.tech-stack .skills .skills-set:hover .skills-set-details {
+    display: block;
+    z-index: 2;
+}
+
+
+/*Projects*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.projects .title {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.projects .project-lists {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 98%;
+}
+
+.projects .project-details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 5px;
+    border: 1px solid var(--dark);
+    box-shadow: 4px 6px #888888;
+}
+
+.project-details img {
+    width: 100%;
+}
+
+.project-lists .project-details p {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.project-lists .project-details .desc {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.projects .project-lists .project-details:first-child {
+    width: 70%;
+}
+
+.projects .project-lists .project-details:hover {
+    background-color: var(--section);
+    width: 70%;
+    box-shadow: 8px 10px #888888;
+}
+
+/*Contact section*/
+
+.contact-form {
+    display: inline-table;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #888;
+    padding: 10px;
+    margin: 20px;
+    width: calc(100vw - 80%);
+}
+
+.contact-form i {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 48px;
+}
+
+.contact-form .send-message{
+    display: none;
+}
+
+.send-message-icon:hover .send-message {
+    display: block;
+    background-color: var(--section);
+    font-size: 20px;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.contact-form .contact-form-input {
+    display: block;
+    width: 90%;
+    padding: .375rem .75rem;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #212529;
+    background-color: #fff;    
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.contact-form .contact-form-textarea {
+    height: 60px;
+}
+
+.contact-form .contact-form-details {
+    margin: 10px 0;
+} 
+
+.contact-form .contact-form-details .button {
+    background-color: var(--section);
+    width: 100px;
+    padding: 8px;
+}
+
+.contact-form .contact-form-details .button:hover {
+    width: 20%;
+}
+
+.social-network {
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact .follow .social-network .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-github {
+background: #2c4762;
+color: white;
+}
+
+/*Responsive Web - Media queries*/
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+   .left-nav {
+       display: block;
+       width: 100%;
+       margin: 0;
+   }
+
+   .right-nav {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 10px;
+   }
+
+   .right-content .avatar {
+        width: 100%;
+    }
+
+    .tech-stack .skills {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .tech-stack .skills-set {
+        margin: 5px 0;
+    }
+
+    .projects .project-lists {
+        flex-direction: column;
+    }
+
+    .projects .project-details {
+        width: 80%;
+    }
+
+    .projects .project-lists .project-details:first-child {
+        width: 80%;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-form .contact-form-input {
+        width: 86%;
+    }
+
+}
