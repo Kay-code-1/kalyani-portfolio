@@ -193,6 +193,12 @@ main {
     box-shadow: 8px 10px #888888;
 }
 
+.project-imgcard {
+    height: 225px; 
+    width: 100%; 
+    display: block;
+}
+
 /*Contact section*/
 
 .contact-form {
