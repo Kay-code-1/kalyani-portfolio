@@ -132,4 +132,5 @@ function addProjects() {
   }
 }
 
+// add projects
 addProjects();
