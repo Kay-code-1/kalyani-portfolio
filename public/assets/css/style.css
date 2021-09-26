@@ -1,5 +1,5 @@
 :root {
-  --light: #b2b7ff;
+  --lavender: #b2b7ff;
   --dark: #2f365f;
   --body-main: #eeeeee;
   --section: #dfcba7;
@@ -45,13 +45,6 @@ main {
   padding: 10px;
 }
 
-/*Details*/
-
-.right-nav {
-  margin: 0 10px;
-  padding: 10px;
-}
-
 /*About*/
 
 #about .heading {
@@ -90,34 +83,22 @@ main {
   margin-bottom: 5px;
 }
 
-.tech-stack .skills {
+.tech-stack .skill-set {
+  border: 1px solid var(--dark);
+  border-radius: 25px;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  font-size: 14px;
+  color: var(--dark);
+  margin: 0.4rem 0.6rem 0.4rem 0;
 }
 
-.tech-stack .skills-set {
-  padding: 10px;
-  width: 98%;
-  display: block;
-  background-color: var(--dark);
-  color: white;
-  cursor: pointer;
-  margin: 0 5px;
-}
-
-.tech-stack h3 {
-  text-align: center;
-}
-
-.tech-stack .skills .skills-set .skills-set-details {
-  display: none;
-}
-
-.tech-stack .skills .skills-set:hover .skills-set-details {
-  display: block;
-  z-index: 2;
+.tech-stack .skill-set:hover {
+  background: var(--lavender);
 }
 
 /*Projects*/
