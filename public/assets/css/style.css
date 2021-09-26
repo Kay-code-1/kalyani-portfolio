@@ -18,10 +18,16 @@ body {
 header {
   background-color: var(--dark);
   width: 100%;
-  margin-bottom: 20px;
-  padding: 10px 0;
   color: #fff;
   text-align: center;
+}
+
+.nav-item > a {
+  color: #fff;
+}
+
+.nav-item > a:hover {
+  color: rgb(216, 216, 216);
 }
 
 h1 {
@@ -31,6 +37,7 @@ h1 {
 
 main {
   display: flex;
+  background-color: var(--light);
 }
 
 .container {
@@ -38,57 +45,32 @@ main {
   padding: 10px;
 }
 
-.left-nav {
-  /* height: 80%; */
-  width: 20%;
-  background-color: lightgray;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 50px;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.left-nav a,
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-}
-
 /*Details*/
 
 .right-nav {
-  background-color: var(--light);
-  width: 80%;
   margin: 0 10px;
   padding: 10px;
 }
 
 /*About*/
 
-.right-content {
-  display: flex;
-  flex-direction: row;
-}
-
-.right-content .heading {
+#about .heading {
   width: 100%;
   padding: 15px;
 }
 
-.right-content .title {
+#about .title {
   font-weight: 900;
   font-size: 24px;
 }
 
-.right-content .desc {
+#about .desc {
   font-size: 18px;
 }
 
-.right-content .avatar {
+#about .avatar {
   width: 25%;
-  float: right;
+  box-shadow: -4px 7px 15px 1px rgb(0 0 0 / 20%);
 }
 
 /*Technical skills*/
