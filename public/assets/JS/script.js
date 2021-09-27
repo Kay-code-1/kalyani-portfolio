@@ -141,13 +141,13 @@ const renderProjectlist = () => {
     
     const gitElm = document.createElement('a');
     gitElm.setAttribute('href', projectDetails[i].gitHubURL);
-    gitElm.setAttribute('alt', projectDetails[i].gitHubURL);
+    gitElm.setAttribute('title', projectDetails[i].gitHubURL);
     gitElm.setAttribute('target', '_blank');
     gitElm.innerHTML = '<i class="fab fa-github"></i>';
 
     const deployElm = document.createElement('a');
     deployElm.setAttribute('href', projectDetails[i].deployLink);
-    deployElm.setAttribute('alt', projectDetails[i].deployLink);
+    deployElm.setAttribute('title', projectDetails[i].deployLink);
     deployElm.setAttribute('target', '_blank');
     deployElm.innerHTML = '<i class="fas fa-server"></i>';
 
